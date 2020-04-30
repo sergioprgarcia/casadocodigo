@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,6 +21,7 @@ public class Produto {
 	
 	private String titulo;
 	
+	@Lob
 	private String descricao;
 	
 	private int paginas;
